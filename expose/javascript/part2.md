@@ -4,7 +4,7 @@
 4. This function will return the array [50,100,150] because the loop takes each number in the prices array and multiplies it by 0.5 before rounding it and pushing onto the discounted array.
 5. Error. Since i was declared using let, once we exit from the for loop, i is out of scope and therefore a call to it at line 12 returns a variable undefined error.
 6. Error. Since discountedPrice was delcared using let, once we exit from the for loop, discountedPrice is out of scope and therefore a call to it at line 13 returns a variable undefined error.
-7. Error. Since finalPrice was delcared using let, once we exit from the for loop, finalPrice is out of scope and therefore a call to it at line 14 returns a variable undefined error.
+7. At line 14, we will print out '150' because the last assignment for finalPrice was Math.round(150 * 100) / 100, which is 150.
 8. This function will return the array [50,100,150] because the loop takes each number in the prices array and multiplies it by 0.5 before rounding it and pushing onto the discounted array.
 9. Error. Since i was declared using let, once we exit from the for loop, i is out of scope and therefore a call to it at line 11 returns a variable undefined error.
 10. At line 12, we will print out '3' because length was assigned to prices.length and prices has 3 elements.
@@ -29,7 +29,9 @@
     E. false the integer representation of true is 1 so 1 == 2 is false
     F. true Since 2 is not one of the intuitively "empty" values, it converts to true and a true === true is true
 15. The normal equality operator ==, converts operands of different types to numbers so 0 == false would be true. The strict equality operator === does not type convert so operands of different types are immediately false.
+16. in part2-question16.js
 17. [2,4,6]. When we call modifyArray([1,2,3], doSomething), we are passing a function as a parameter. So once we enter the loop in modifyArray, we call callBack, which is the function doSomething, and it takes the element in the array and doubles it then pushes it into the newArr. Therefore, at the end of the loop, the newArr contains the elements from the array doubled.
+18. in part2-question18.js
 19. 1
     4
     3
